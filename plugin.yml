@@ -1,0 +1,35 @@
+name: HeroicRebuke
+main: com.bitzcraftonline.rebuke.HeroicRebuke
+version: 1.4.3
+author: PvM_Iain
+commands:
+  warn:
+    description: Send a warning to misbehaving players that forces their acknowledgment.
+    usage: /warn help - Displays usage instructions
+permissions:
+  heroicrebuke.add:
+    default: Op
+    description: Allows adding warnings to a player
+  heroicrebuke.clear:
+    default: Op
+    description: Clear active warning a player
+  heroicrebuke.active:
+    default: Op
+    description: Show all unacknowledged warnings
+  heroicrebuke.info:
+    default: Op
+    description: Display extended information about the given warning
+  heroicrebuke.list:
+    default: true
+    description: Allows listing own warnings
+  heroicrebuke.list.others:
+    default: Op
+    description: Allows listing others' warnings
+  heroicrebuke.delete:
+    default: Op
+    description: Permanently delete a warning
+commands:
+  warn:
+    description: Main command
+    usage: /warn help - shows help
+    aliases: [rebuke]
