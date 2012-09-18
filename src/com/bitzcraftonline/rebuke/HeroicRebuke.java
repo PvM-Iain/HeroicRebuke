@@ -27,8 +27,7 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class HeroicRebuke extends JavaPlugin
-{
+public class HeroicRebuke extends JavaPlugin {
   public static HashMap<String, Warning> warnings;
   public static HashMap<String, ArrayList<String>> lists;
   public int noDatabaseIndex = 1;
