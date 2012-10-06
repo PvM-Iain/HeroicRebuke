@@ -11,11 +11,8 @@ import java.sql.Timestamp;
 import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Enumeration;
-import java.util.HashMap;
 import java.util.Properties;
 import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.bukkit.Server;
 import org.bukkit.entity.Player;
 
 public class HeroicRebukeMySQL extends HeroicRebukeDatasource
