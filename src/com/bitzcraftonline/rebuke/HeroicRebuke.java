@@ -143,11 +143,11 @@ public class HeroicRebuke extends JavaPlugin {
     Player player = null;
 
     Warning isWarned = null;
-    String senderName;
+    String senderName = null;
     if ((sender instanceof Player)) {
       player = (Player)sender;
-      String senderName = player.getName();
-      isWarned = (Warning)warnings.get(senderName.toLowerCase());
+      String senderName1 = player.getName();
+      isWarned = (Warning)warnings.get(senderName1.toLowerCase());
     } else {
       senderName = this.consoleSender;
     }
@@ -343,18 +343,18 @@ public class HeroicRebuke extends JavaPlugin {
 
       int page = 1;
       i = 0;
-      String target;
+      String target = null;
       if (sender.hasPermission("heroicrebuke.list.others"))
       {
-        String target;
+        String target1;
         if (args.length < 2)
-          target = senderName;
+          target1 = senderName;
         else
           try {
             page = Integer.parseInt(args[1].trim());
-            target = senderName;
+            target1 = senderName;
           } catch (NumberFormatException e) {
-            String target = args[1].trim();
+            String target11 = args[1].trim();
             if (args.length > 2)
               i = 2;
           }
@@ -423,7 +423,7 @@ public class HeroicRebuke extends JavaPlugin {
       catch (NumberFormatException e)
       {
         sender.sendMessage(new StringBuilder().append(this.infoColor).append("Error: ").append(this.messageColor).append("Bad number format.").toString());
-        return 1;
+        return true;
       } finally {
         if (index < 1) {
           return false;
